@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readify | Recommend</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="images/png" href="images/favicon.png">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo"><img src="images/RLogo.png" height="100" width="100"></div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommend.html">Recommend</a></li>
+        <li><a href="flow.html">Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <section id="recommender">
+      <h1>Random Book Recommender</h1>
+    
+      <h3>Deciding what to read next?</h3>
+      <p>
+        You’re in the right place. Tell us what titles or genres you’ve enjoyed in the past, and we’ll give you the best recommendations.
+      </p>
+    
+
+      <label>Genre:</label>
+      <select id="genre-select">
+        <option value="">All</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+      </select>
+
+      <label>Length:</label>
+      <select id="length-select">
+        <option value="">Any</option>
+        <option value="Short">Short</option>
+        <option value="Medium">Medium</option>
+        <option value="Long">Long</option>
+      </select>
+
+      <button id="pick-btn">Pick a Book</button>
+      <button id="save-btn">Save to Reading List</button>
+
+      <div id="recommendation">
+        <h2 id="rec-title"></h2>
+        <p id="rec-author"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Readify. All rights reserved.</p>
+  </footer>
+
+  <script src="js/recommend.js"></script>
+  <script src="js/main.js"></script>
+  
+</body>
+</html>

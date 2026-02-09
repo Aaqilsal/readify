@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readify | Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="images/png" href="images/favicon.png">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo"><img src="images/RLogo.png" height="100" width="100"></div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommend.html">Recommend</a></li>
+        <li><a href="flow.html">Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <h1>Reading Progress Tracker</h1>
+
+    <div class="tracker-image">
+       <img src="images/Explore.jpg" alt="tracker image">
+    </div>
+
+
+  <main>
+
+    <h3>Do you want to check your reading progress?</h3>
+    <p>
+      Then let us know the total pages of your book, pages read already and reading speed. We'll let you know your progress and how long will it take to completion.
+    </p>
+
+
+    <section id="tracker">
+      
+      <label>Total Pages:</label>
+      <input type="number" id="total-pages" placeholder="Enter total pages">
+
+      <label>Pages Read:</label>
+      <input type="number" id="pages-read" placeholder="Enter pages read">
+
+      <label>Reading Speed (pages/day):</label>
+      <input type="number" id="reading-speed" placeholder="Enter pages per day">
+
+      <button id="calculate-btn">Calculate Progress</button>
+
+      <div id="progress-result">
+        <p id="percent-completed"></p>
+        <p id="estimated-finish"></p>
+        <div id="progress-bar-container">
+          <div id="progress-bar"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Readify. All rights reserved.</p>
+  </footer>
+
+  <script src="js/tracker.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

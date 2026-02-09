@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readify | Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="images/RLogo.png" alt="Readify Logo">
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explorer.html">Explorer</a></li>
+      <li><a href="tracker.html">Tracker</a></li>
+      <li><a href="recommend.html">Recommend</a></li>
+      <li><a href="flow.html">Flow</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section id="book-explorer">
+    <h1>Book Explorer</h1>
+
+    <!-- Filters -->
+    <input type="text" id="search-input" placeholder="Search by title or author">
+    <select id="genre-filter">
+      <option value="">All genres</option>
+      <option value="Fiction">Fiction</option>
+      <option value="Fantasy">Fantasy</option>
+      <option value="Sci-Fi">Sci-Fi</option>
+    </select>
+
+    <!-- Book cards -->
+    <div id="book-cards" class="cards-container"></div>
+  </section>
+
+  <!-- Modal -->
+  <div id="book-modal" class="modal">
+    <div class="modal-content">
+      <span id="modal-close">&times;</span>
+      <img id="modal-image" src="" alt="Book cover">
+      <h2 id="modal-title"></h2>
+      <p id="modal-synopsis"></p>
+
+      <p><strong>Sequels / Prequels:</strong></p>
+      <ul id="modal-sequels"></ul>
+
+      <table id="modal-reviews">
+        <tr>
+          <th>Rating</th>
+          <th>Review</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 Readify. All rights reserved.</p>
+</footer>
+
+<script src="js/explorer.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
