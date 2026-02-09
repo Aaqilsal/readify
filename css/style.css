@@ -57,7 +57,7 @@ nav {
   align-items: center;
   padding: 0 20px;
   height: 100px;
-  background: #98a7b8;
+  background: #9fafc0;
 }
 
 .nav-links {
@@ -68,7 +68,7 @@ nav {
 }
 
 .nav-links a {
-  color: rgb(27, 1, 89);
+  color: rgb(30, 3, 91);
   text-decoration: none;
 }
 
